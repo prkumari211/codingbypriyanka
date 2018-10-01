@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale1">
+	<title>The Gym - Personal Training</title>
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.in">
+	<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+<body>
+	<header>
+		<div id="header-inner">
+			<a href="index.html" id="logo"></a>
+			<nav>
+				<a href="#" id="menu-icon"></a>
+				<ul>
+					<li><a href="index.html" class="current">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Facility</a></li>
+					<li><a href="#">Pricing</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>			
+		</div>
+	</header>
+
+<!-- Start Slider-->
+<script src="js/jquery.bxslider.min.js"></script>
+<div class="slider-wrap">
+	<section class="slider">
+		<ul class="slider1">
+			<li><img src="img/1.png"></li>
+			<li><img src="img/2.png"></li>
+			<li><img src="img/3.png"></li>
+			<li><img src="img/4.png"></li>
+		</ul>
+		
+	</section>
+	
+</div>
+
+<script type="text/javascript">
+	$('.slider1').bxSlider
+	({
+		mode: 'fade',
+		captions: false,
+		auto: true,
+		pager: false,
+	});
+	$('.slider2').bxSlider
+	({
+		pager:false,
+		captions:true,
+		maxSlides:3,
+		minSlides:1,
+		slideWidth:230,
+		slideMargin:10
+	});
+	$('.slider3').bxSlider
+	({
+		mode:'fade',
+		captions:false,
+		auto:true,
+		pager:false;
+		controls:false,
+	});
+</script>
+<!--End Slider-->
+
+<div class="clearfix"></div>
+<div id="inner-wrapper">
+	<section class="one-third">
+		<div class="circle">
+			<td><i class="fa fa-users"></i></td>	
+		</div>
+		<h3>Grade A Staff</h3>
+		<p>it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>	
+	</section>
+
+	<section class="one-third">
+		<div class="circle">
+			<td><i class="fa fa-map-marker"></i></td>			
+		</div>
+		<h3>A Conveninet Location</h3>
+		<p>
+		t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>	
+	</section>
+	<section class="one-third">
+		<div class="circle">
+			<td><i class="fa fa-check-square-o"></i></td>			
+		</div>
+		<h3>Check Us Out- Free!</h3>
+		<p>
+			t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+		</p>		
+	</section>	
+</div>
+</body>
+</html>

@@ -1,0 +1,407 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+h1
+{
+	padding:5px;
+}
+.navbar ul li a > span .border 
+{
+  display: block;
+  height: 3px;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; 
+}
+.navbar ul li a > span .border:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FBB040;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; 
+}
+.navbar ul li a:hover, .navbar ul li a:focus {
+  outline: none; }
+.navbar ul li a:hover > span, .navbar ul li a:focus > span {
+  outline: none; }
+.navbar ul li a:hover > span .border:before, .navbar ul li a:focus > span .border:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+.navbar ul li.active a {
+  background: transparent; }
+.navbar ul li.active a > span .border {
+  background: #FBB040; }
+
+
+
+
+
+
+
+
+
+
+.flip3D
+{
+	width: 390px;
+	height: 250px;
+	margin: 27px;
+	float: left;
+}
+
+.flip3D > .front
+{
+	position: absolute;
+	-webkit-transform: perspective( 600px ) rotateY(0deg);
+	transform: perspective( 600px ) rotateY(0deg);
+	background: #4183D7; 
+	width: 390px;
+	height: 250px;
+	border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+
+}
+
+
+.flip3D > .back
+{
+	position: absolute;
+	-webkit-transform: perspective( 600px ) rotateY(180deg);
+	transform: perspective( 600px ) rotateY(180deg);
+	background: #013243; 
+	width: 390px;
+	height: 250px;
+	border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+
+}
+
+.flip3D:hover > .front
+{
+	-webkit-transform: perspective(600px) rotateY(-180deg);
+	transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip3D:hover > .back
+{
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
+}
+
+.front > a
+{
+	list-style: none;
+	top: 10%;
+	margin-left:32%;
+	width: 140px;
+	height: 140px;
+	line-height: 140px;
+	text-align:center;
+	background-color: #000;
+	border-radius: 50%;
+}
+
+.front > a > i
+{
+	margin-top: 20%;
+	font-size: 80px;
+} 
+.front >h3
+{
+	margin-top: 50%;
+	margin-left: 25%;
+}
+
+.back p
+{
+	margin: 10px;
+	color: #fff;
+}
+.back h3
+{
+	color: #fff;
+}
+
+
+
+
+/*
+footer
+{
+	clear: both;
+	width: 100%;
+	height:100%;
+	color:#fff;
+	background-color:#000;
+	padding: 20px;
+	letter-spacing: 1px;
+	font-size: 25px;
+}
+
+.social li
+{
+	display: inline;
+	margin-left: 20px;
+
+}
+.social i
+{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	color: #fff;
+	opacity: .5;
+}
+
+.social i:hover
+{
+	opacity: 1;
+}
+#facebook
+{
+	background:#3A5795;
+}
+#google-plus
+{
+	background:#D95232;
+}
+
+#twitter
+{
+	background:#5EA9DD;
+}
+
+#youtube
+{
+	background:#E12B27;
+}
+#linkedin
+{
+	background:#0077B5;
+}
+*/
+/*About us*/
+
+section
+{
+	overflow: hidden;
+	padding: 15px;
+	box-shadow: 0 25px 30px rgba(0,0,0,.5);
+}
+.content1
+{
+	width: 100%;
+	height: 300px;
+	background:#000;
+	margin:auto;
+	margin-top: 15px;
+	box-sizing: border-box;
+
+
+}
+.content1 i
+{
+	margin-top: 70px;
+	margin-left: 10%;
+	font-size: 100px;
+	color: #fff;
+}
+/*
+.imageBox1
+{
+
+	width: 40%;
+	height: 100%;
+	float: left;
+	border-top: 300px solid #fff;
+	border-right: 200px solid transparent;
+	
+} */
+
+.content2
+{
+	width: 100%;
+	height: 300px;
+	background:#000;
+	margin:auto;
+	margin-top: 15px;
+	box-sizing: border-box;
+}
+.imageBox2
+{
+	width: 40%;
+	height: 100%;
+	float: right;
+	border-top: 300px solid #1E8BC3;
+	border-left: 200px solid transparent;
+}
+.content3
+{
+	width: 100%;
+	height: 300px;
+	background:#000;
+	margin:auto;
+	margin-top: 15px;
+	box-sizing: border-box;
+}
+.imageBox3
+{
+	width: 40%;
+	height: 100%;
+	float: left;
+	border-top: 300px solid #1E8BC3;
+	border-right: 200px solid transparent;
+}
+.content4
+{
+	width: 100%;
+	height: 300px;
+	background:#000;
+	margin:auto;
+	margin-top: 15px;
+	box-sizing: border-box;
+}
+.imageBox4
+{
+	width: 40%;
+	height: 100%;
+	float: right;
+	border-top: 300px solid #1E8BC3;
+	border-left: 200px solid transparent;
+}
+/*End About*/
+/*service*/
+
+#service .containers
+{
+	clear: both;
+	margin-top: 10%;
+	
+}
+.services
+{
+	text-align: center;
+}
+.services h2, .services h4
+{
+	color: #4c4c4c;
+	margin:20px 0 20px;
+}
+.services p
+{
+	color: #000;
+	font-size: 14px;
+	padding-bottom: 40px;
+}
+.services i
+{
+	height: 100px;
+	width: 100px;
+	font-size: 20px;
+	padding:45px 20px;
+	border-radius: 50%;
+	background-color: #6699cc;
+	color: #fff;
+	overflow: hidden;
+}
+.service-box
+{
+	text-align: center;
+	padding: 30px 15px 10px 5px;
+	overflow: hidden;
+	position: relative;
+	transition: all 0.3s ease 0s;
+
+}
+.service-box:hover
+{
+  background:#967128;
+  	
+}
+.service-box:before
+{
+	content: '';
+	width: 40px;
+	height: 40px;
+	border-width: 25px;
+	border-style: solid;
+	border-color:white white rgba(1,1,1,0.2) rgba(0,0,0,0.2);
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	transition: all 0.3s ease 0s;
+
+
+}
+.service-box:hover:before
+{
+	top: 0;
+	right: 0;
+}
+
+.xxlarge
+{
+	clear: both;
+	font-size: 50px;
+}
+
+/*End Service part*/
+
+/* Training */
+.my_tabs ul
+{
+	clear: both;
+	margin-left: 35%;
+}
+
+
+.tab-content img
+{
+	width: 332px;
+	overflow: hidden;
+}
+/* End training */
+
+
+/*Contact*/
+.form-control
+{
+	border:0;
+}
+
+
+
+
+
